@@ -9,9 +9,9 @@ const buscarDisco = function(url){
       console.log(new Error(error.message));
     }).then(data => {
       console.log('data:', data);
-      // paso 2: armar datos que necesitas
+      // paso 2: armar datos que necesita
       // hacer un arreglo con los veinte primeros
-      let veinte = (data.slice(0, 20));
+      let veinte = (data.slice(0, 20));   // slice "parte desde indice 0 y entrega 20 objetos"
       
        // paso 3: retornar esa variable.
         console.table(veinte);
